@@ -16,9 +16,20 @@
   {
     return a + b + c;
   }
-
   public static int AddNumbers(params int[] integers)
   {
     return integers.Sum();
+  }
+  public static void PrintMessage()
+  {
+    Console.WriteLine("Damn");
+  }
+  public static bool IsEven(int number)
+  {
+    if (number % 2 == 0)
+    {
+      return true;
+    }
+    return false;
   }
 }
