@@ -1,0 +1,14 @@
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\bin\Debug\net9.0\MyFirstApp.exe
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\bin\Debug\net9.0\MyFirstApp.deps.json
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\bin\Debug\net9.0\MyFirstApp.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\bin\Debug\net9.0\MyFirstApp.dll
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\bin\Debug\net9.0\MyFirstApp.pdb
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.dll
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\refint\MyFirstApp.dll
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.pdb
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\MyFirstApp.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\MyFirstApp\obj\Debug\net9.0\ref\MyFirstApp.dll
