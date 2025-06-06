@@ -10,10 +10,6 @@ internal class Program
     Console.WriteLine(AddNumbers(2));
     Console.WriteLine(AddNumbers(1, 2, 3, 4, 5, 6, 7, 8));
 
-    string name = "Alberto";
-    name = name.ToLower();
-
-    Console.WriteLine(name);
     Console.WriteLine(DateTime.UtcNow);
 
     DateTime.UtcNow.AddDays(1);
@@ -48,6 +44,27 @@ internal class Program
     var personInfo = GetEmployee();
     Console.WriteLine(personInfo.Age);
     Console.WriteLine(personInfo.Name);
+
+    // Strings
+    string name = "Alberto";
+    string name2 = "AlbertO";
+    name = name.ToLower();
+    string text = """
+                  Hello master, how are you?
+                  """;
+    string greeting = $"Hello, {name}";
+    string emptyString = string.Empty;
+    var isNullOrEmpty = string.IsNullOrEmpty(emptyString);
+
+    if (string.Equals(name, name2, StringComparison.OrdinalIgnoreCase))
+    {
+      Console.WriteLine("Name is equal");
+    }
+
+    Console.WriteLine(name);
+    Console.WriteLine(text);
+    Console.WriteLine(greeting);
+    Console.WriteLine(isNullOrEmpty);
 
   }
   // Enums
