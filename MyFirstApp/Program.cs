@@ -160,6 +160,52 @@ internal class Program
       }
     }
 
+    // Exception Handling
+    Console.WriteLine("EXCEPTION HANDLING");
+
+    try
+    {
+      DateTime.Parse("asdf");
+      string name3 = "Alice";
+      if (name3 != "Beto")
+      {
+        throw new InvalidOperationException("YOU ARE NOT BETO!");
+      }
+    }
+    catch (ArgumentNullException ex)
+    {
+      Console.WriteLine("Something went wrong!");
+    }
+    catch (FormatException ex)
+    {
+      Console.WriteLine("Something went wrong!");
+    }
+    finally
+    {
+      Console.WriteLine("Finally!");
+    }
+
+    try
+    {
+      string name3 = "Alice";
+      if (name3 != "Beto")
+      {
+        throw new InvalidOperationException("YOU ARE NOT BETO!");
+      }
+    }
+    catch (ArgumentNullException ex)
+    {
+      Console.WriteLine("Something went wrong!");
+    }
+    catch (FormatException ex)
+    {
+      Console.WriteLine("Something went wrong!");
+    }
+    finally
+    {
+      Console.WriteLine("Finally!");
+    }
+
   }
   // Enums
   enum EmployeeType
@@ -195,5 +241,13 @@ internal class Program
   public static (int Age, String Name) GetEmployee()
   {
     return (30, "Beto");
+  }
+  // Exception Handling
+  public static void DomeSomeProcessing(string criticalValue)
+  {
+    if (string.IsNullOrWhiteSpace(criticalValue))
+    {
+      throw new ArgumentException();
+    }
   }
 }
