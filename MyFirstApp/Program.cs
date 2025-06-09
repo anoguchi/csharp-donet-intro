@@ -206,6 +206,20 @@ internal class Program
       Console.WriteLine("Finally!");
     }
 
+    // Pattern Matching
+    Console.WriteLine("Pattern Matching");
+
+    object value = "Hello, World!";
+    if (value is string str)
+    {
+      Console.WriteLine($"The value is a string: {str}");
+    }
+    else
+    {
+      Console.WriteLine("The value is not a string.");
+    }
+
+
   }
   // Enums
   enum EmployeeType
