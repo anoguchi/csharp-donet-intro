@@ -136,9 +136,9 @@ internal class Program
     // ForEach
     int[] arr = [1, 2, 3, 4, 5];
 
-    foreach (var value in arr)
+    foreach (var arrValue in arr)
     {
-      Console.WriteLine(value);
+      Console.WriteLine(arrValue);
     }
 
     // Break
@@ -159,6 +159,17 @@ internal class Program
         continue;
       }
     }
+
+    // Operators
+    Console.WriteLine("OPERATORS");
+
+    int a = 5;
+    //int b = a++; // b is 5, a is 6
+    int c = a + 1; // c is 7, a is 7
+
+    // Console.WriteLine(b);
+    Console.WriteLine(c);
+    Console.WriteLine(a);
 
     // Exception Handling
     Console.WriteLine("EXCEPTION HANDLING");
@@ -219,8 +230,8 @@ internal class Program
       Console.WriteLine("The value is not a string.");
     }
 
-
   }
+
   // Enums
   enum EmployeeType
   {
