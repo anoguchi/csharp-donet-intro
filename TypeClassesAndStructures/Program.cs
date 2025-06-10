@@ -196,6 +196,30 @@ public class SalariedCustomer : Customer
   }
 }
 
+// INTERFACES
+public interface IDatabase
+{
+  void Connect();
+  void Disconnect();
+  bool IsConnected { get; }
+}
+public class SqlDatabase : IDatabase
+{
+  public bool IsConnected { get; private set; }
+
+  public void Connect()
+  {
+    // Implementation code
+    IsConnected = true;
+  }
+
+  public void Disconnect()
+  {
+    // Implementation code
+    IsConnected = false;
+  }
+}
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -303,7 +327,10 @@ internal class Program
     Console.WriteLine(dude == dude2); // True
     dude.Equals(dude2); // True
 
+    Console.WriteLine(pattern);
+
     // INHERITANCE
+    Console.WriteLine("INHERITANCE");
     var hourByEmployee = new HourlyEmployee
     {
       FirstName = "Beto",
@@ -312,5 +339,12 @@ internal class Program
     };
 
     Console.WriteLine(hourByEmployee.GetEmployeeDetails());
+
+    Console.WriteLine(pattern);
+
+    // INTERFACES
+    Console.WriteLine("INTERFACES");
+
+
   }
 }
