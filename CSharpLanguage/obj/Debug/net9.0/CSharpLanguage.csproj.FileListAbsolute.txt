@@ -1,0 +1,15 @@
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\bin\Debug\net9.0\CSharpLanguage.exe
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\bin\Debug\net9.0\CSharpLanguage.deps.json
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\bin\Debug\net9.0\CSharpLanguage.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\bin\Debug\net9.0\CSharpLanguage.dll
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\bin\Debug\net9.0\CSharpLanguage.pdb
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.sourcelink.json
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.dll
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\refint\CSharpLanguage.dll
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.pdb
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\CSharpLanguage.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\CSharpLanguage\obj\Debug\net9.0\ref\CSharpLanguage.dll
