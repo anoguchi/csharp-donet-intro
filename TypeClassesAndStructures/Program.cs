@@ -119,6 +119,34 @@ public class HourlyEmployee : BaseEmployee
     return HourlyRate * hoursWorked;
   }
 }
+
+// SEALED VS VIRTUAL
+
+// Virtual - A virtual method/property in the base class can be overridden in derived classes to provide specific implementations.
+public class BaseWorker
+{
+  public virtual string GetWorkerDetails()
+  {
+    return "Base worker details";
+  }
+}
+
+public class DerivedWorker : BaseWorker
+{
+  public override string GetWorkerDetails()
+  {
+    return "Derived worker details";
+  }
+}
+
+// Sealed - A sealed class cannot be inherited. Use this to prevent further derivation.
+public class MyEmployee
+{
+  public sealed override string ToString() //sealed prevents overriding in derived classes
+  {
+    return "Base employee details";
+  }
+}
 internal class Program
 {
   private static void Main(string[] args)
