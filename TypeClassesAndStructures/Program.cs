@@ -51,7 +51,7 @@ public class Individuo
   public string Name { get; set; }
   public int Age { get; set; }
 
-  public Person(string name, int age)
+  public Individuo(string name, int age)
   {
     Name = name;
     Age = age;
@@ -82,7 +82,7 @@ public class Criatura
   public int Age { get; init; }
 }
 
-// STRUCTS AND RECORDS
+// STRUCTS
 public struct Point
 {
   public int X { get; }   //look ma, no setter!
@@ -94,8 +94,31 @@ public struct Point
     Y = y;
   }
 }
+
+// RECORDS
 public record Gente(string Name, int Age);
 
+// INHERITANCE
+public class BaseEmployee
+{
+  public string FirstName { get; set; }
+  public string LastName { get; set; }
+
+  public virtual string GetEmployeeDetails()
+  {
+    return $"{FirstName} {LastName}";
+  }
+}
+
+public class HourlyEmployee : BaseEmployee
+{
+  public decimal HourlyRate { get; set; }
+
+  public decimal CalculateWeeklyPay(int hoursWorked)
+  {
+    return HourlyRate * hoursWorked;
+  }
+}
 internal class Program
 {
   private static void Main(string[] args)
@@ -203,5 +226,14 @@ internal class Program
     Console.WriteLine(gente == gente2); // True
     gente.Equals(gente2); // True
 
+    // INHERITANCE
+    var hourByEmployee = new HourlyEmployee
+    {
+      FirstName = "Beto",
+      LastName = "Noguchi",
+      HourlyRate = 123.23M
+    };
+
+    Console.WriteLine(hourByEmployee.GetEmployeeDetails());
   }
 }
