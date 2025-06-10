@@ -1,0 +1,15 @@
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.sourcelink.json
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\bin\Debug\net9.0\TypeClassesAndStructures.exe
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\bin\Debug\net9.0\TypeClassesAndStructures.deps.json
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\bin\Debug\net9.0\TypeClassesAndStructures.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\bin\Debug\net9.0\TypeClassesAndStructures.dll
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\bin\Debug\net9.0\TypeClassesAndStructures.pdb
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.dll
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\refint\TypeClassesAndStructures.dll
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.pdb
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\TypeClassesAndStructures.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\TypeClassesAndStructures\obj\Debug\net9.0\ref\TypeClassesAndStructures.dll

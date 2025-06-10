@@ -159,6 +159,7 @@ internal class Program
         continue;
       }
     }
+    Console.WriteLine(pattern);
 
     // OPERATORS
     Console.WriteLine("OPERATORS");
@@ -170,6 +171,7 @@ internal class Program
     Console.WriteLine(b);
     Console.WriteLine(c);
     Console.WriteLine(a);
+    Console.WriteLine(pattern);
 
     // CONVERSION
     Console.WriteLine("CONVERSION");
@@ -197,6 +199,8 @@ internal class Program
 
     // Convert
     int num06 = Convert.ToInt32("5"); // Converts "5" to 5
+
+    Console.WriteLine(pattern);
 
     // EXCEPTION HANDLING
     Console.WriteLine("EXCEPTION HANDLING");
@@ -243,6 +247,8 @@ internal class Program
     {
       Console.WriteLine("Finally!");
     }
+
+    Console.WriteLine(pattern);
 
     // PATTERN MATCHING
     Console.WriteLine("Pattern Matching");
