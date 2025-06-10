@@ -44,7 +44,43 @@ public class Hero
   public int Age { get; set; } // Mutable property
 }
 
-// Constructors
+// CONSTRUCTORS
+
+public class Individuo
+{
+  public string Name { get; set; }
+  public int Age { get; set; }
+
+  public Person(string name, int age)
+  {
+    Name = name;
+    Age = age;
+  }
+}
+
+// Thrown exceptions in constructors
+public class Humano
+{
+  public string Name { get; set; }
+  public int Age { get; set; }
+
+  public Humano(string name, int age)
+  {
+    if (string.IsNullOrWhiteSpace(name))
+    {
+      throw new ArgumentException("Name cannot be null or empty", nameof(name));
+    }
+    Name = name;
+    Age = age;
+  }
+}
+
+// Using object initializers
+public class Criatura
+{
+  public string Name { get; init; }
+  public int Age { get; init; }
+}
 
 internal class Program
 {
@@ -124,7 +160,21 @@ internal class Program
 
     Console.WriteLine(personagem.FullName);
 
+    // CONSTRUCTORS  
     Console.WriteLine("Constructors");
 
+    // Using object initializers
+    Person person01 = new Person
+    {
+      Name = "John Doe",
+      Age = 30            //❤️
+    };
+
+    Criatura criatura = new Criatura
+    {
+      // cant do criatura.Name or criatura.Age
+      Name = "John Doe",
+      Age = 30
+    };
   }
 }
