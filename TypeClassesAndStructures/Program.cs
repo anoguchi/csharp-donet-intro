@@ -30,7 +30,7 @@ public class Persona
 }
 
 // Properties
-public class Personagem
+public class Individual
 {
   public string FirstName { get; set; }
   public string LastName { get; set; }
@@ -46,12 +46,12 @@ public class Hero
 
 // CONSTRUCTORS
 
-public class Individuo
+public class Guy
 {
   public string Name { get; set; }
   public int Age { get; set; }
 
-  public Individuo(string name, int age)
+  public Guy(string name, int age)
   {
     Name = name;
     Age = age;
@@ -59,12 +59,12 @@ public class Individuo
 }
 
 // Thrown exceptions in constructors
-public class Humano
+public class Fellow
 {
   public string Name { get; set; }
   public int Age { get; set; }
 
-  public Humano(string name, int age)
+  public Fellow(string name, int age)
   {
     if (string.IsNullOrWhiteSpace(name))
     {
@@ -76,7 +76,7 @@ public class Humano
 }
 
 // Using object initializers
-public class Criatura
+public class Creature
 {
   public string Name { get; init; }
   public int Age { get; init; }
@@ -96,7 +96,7 @@ public struct Point
 }
 
 // RECORDS
-public record Gente(string Name, int Age);
+public record Dude(string Name, int Age);
 
 // INHERITANCE
 public class BaseEmployee
@@ -147,6 +147,55 @@ public class MyEmployee
     return "Base employee details";
   }
 }
+
+// ABSTRACT CLASSES
+
+/*
+Abstract classes serve as a base class that other classes can derive from. They may contain abstract methods that derived classes must implement, providing shared behaviors and properties.
+
+Abstract classes cannot be instantiated directly. 
+*/
+
+public abstract class Customer
+{
+  public string FirstName { get; set; }
+  public string LastName { get; set; }
+
+  public abstract decimal CalculatePay(); // Abstract method
+
+  public virtual string GetCustomerDetails() // Virtual method
+  {
+    return $"{FirstName} {LastName}";
+  }
+
+  public sealed override string ToString() // Sealed method
+  {
+    return GetCustomerDetails();
+  }
+}
+
+// Example of Derived Classes
+public class HourlyCustomer : Customer
+{
+  public decimal HourlyRate { get; set; }
+  public int HoursWorked { get; set; }
+
+  public override decimal CalculatePay()
+  {
+    return HourlyRate * HoursWorked;
+  }
+}
+
+public class SalariedCustomer : Customer
+{
+  public decimal Salary { get; set; }
+
+  public override decimal CalculatePay()
+  {
+    return Salary / 52; // Weekly pay calculation
+  }
+}
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -219,11 +268,11 @@ internal class Program
       Name = "John Doe"
     };
 
-    Personagem personagem = new();
-    personagem.FirstName = "Beto";
-    personagem.LastName = "Noguchi";
+    Individual individual = new();
+    individual.FirstName = "Beto";
+    individual.LastName = "Noguchi";
 
-    Console.WriteLine(personagem.FullName);
+    Console.WriteLine(individual.FullName);
 
     // CONSTRUCTORS  
     Console.WriteLine("Constructors");
@@ -235,9 +284,9 @@ internal class Program
       Age = 30            //❤️
     };
 
-    Criatura criatura = new Criatura
+    Creature creature = new Creature
     {
-      // cant do criatura.Name or criatura.Age
+      // cant do creature.Name or creature.Age
       Name = "John Doe",
       Age = 30
     };
@@ -247,12 +296,12 @@ internal class Program
     // STRUCTS AND RECORDS
     Console.WriteLine("Structs and Records");
 
-    var gente = new Gente("John Doe", 30);
-    var gente2 = new Gente("John Doe", 30);
-    var gente3 = gente2 with { Age = 31 };
+    var dude = new Dude("John Doe", 30);
+    var dude2 = new Dude("John Doe", 30);
+    var dude3 = dude2 with { Age = 31 };
 
-    Console.WriteLine(gente == gente2); // True
-    gente.Equals(gente2); // True
+    Console.WriteLine(dude == dude2); // True
+    dude.Equals(dude2); // True
 
     // INHERITANCE
     var hourByEmployee = new HourlyEmployee
