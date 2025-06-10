@@ -5,7 +5,7 @@ class Person
   public int Age { get; set; }
 }
 
-// MODERN NULLABILITY
+// Modern Nullability
 public class Address
 {
   public string Street { get; set; }
@@ -21,6 +21,31 @@ public class Human
   public Address? Address { get; set; }   // Nullable reference type
 }
 
+// CLASSES
+
+// Fields
+public class Persona
+{
+  public string Name;
+}
+
+// Properties
+public class Personagem
+{
+  public string FirstName { get; set; }
+  public string LastName { get; set; }
+  public int Age { get; } // Immutable property
+  public string FullName => $"{FirstName} {LastName}";
+}
+
+public class Hero
+{
+  public string Name { get; } // Immutable property, typically set in constructor
+  public int Age { get; set; } // Mutable property
+}
+
+// Constructors
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -28,6 +53,7 @@ internal class Program
     string pattern = "-------------------------";
 
     // VALUE TYPES
+    Console.WriteLine("VALUE TYPES");
     void ChangeAge(int age)
     {
       age = 10;
@@ -39,7 +65,7 @@ internal class Program
 
     Console.WriteLine(pattern);
 
-    // REFERENCE TYPES
+    // Reference Types
     void ChangeName(Person person)
     {
       person.Name = "New Name";
@@ -51,20 +77,28 @@ internal class Program
 
     Console.WriteLine(pattern);
 
-    // NULL AND NULLABILITY
+    // Null and Nullability
+
+    /*
     string str = null; // Valid for reference types
     int number = null; // This will cause a compilation error - value types cannot be null
+    */
 
     // Nullable value types
+
+    /*
     string str = null; // Valid for reference types
     int? nullableInt = null; // Valid for nullable value types
+    */
 
     /* Word to the Wise: NullReferenceException (Most important thing to remember: Check for null before accessing members of a reference type!)
     */
-    Person person = null;
-    Console.WriteLine(person.Name); // NullReferenceException
 
-    // BOXING AND UNBOXING
+    /* Person person = null;
+    Console.WriteLine(person.Name); // NullReferenceException 
+    */
+
+    // Boxing and Unboxing
 
     /*
     This section covers boxing and unboxing in programming, explaining how value types are converted to reference types and vice versa.
@@ -73,8 +107,24 @@ internal class Program
     int number = 42;
     object boxed = number; // Boxing
 
-    object boxed = 42;
-    int number = (int)boxed; // Unboxing
+    object boxed2 = 42;
+    int number2 = (int)boxed; // Unboxing
+
+    // CLASSES
+    Console.WriteLine("CLASSES");
+
+    var persona = new Persona
+    {
+      Name = "John Doe"
+    };
+
+    Personagem personagem = new();
+    personagem.FirstName = "Beto";
+    personagem.LastName = "Noguchi";
+
+    Console.WriteLine(personagem.FullName);
+
+    Console.WriteLine("Constructors");
 
   }
 }
