@@ -82,6 +82,20 @@ public class Criatura
   public int Age { get; init; }
 }
 
+// STRUCTS AND RECORDS
+public struct Point
+{
+  public int X { get; }   //look ma, no setter!
+  public int Y { get; }
+
+  public Point(int x, int y)
+  {
+    X = x;
+    Y = y;
+  }
+}
+public record Gente(string Name, int Age);
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -176,5 +190,18 @@ internal class Program
       Name = "John Doe",
       Age = 30
     };
+
+    Console.WriteLine(pattern);
+
+    // STRUCTS AND RECORDS
+    Console.WriteLine("Structs and Records");
+
+    var gente = new Gente("John Doe", 30);
+    var gente2 = new Gente("John Doe", 30);
+    var gente3 = gente2 with { Age = 31 };
+
+    Console.WriteLine(gente == gente2); // True
+    gente.Equals(gente2); // True
+
   }
 }
