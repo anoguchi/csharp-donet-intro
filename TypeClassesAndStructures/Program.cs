@@ -220,6 +220,19 @@ public class SqlDatabase : IDatabase
   }
 }
 
+// EXTENSION METHODS
+public static class StringExtensions
+{
+  public static bool IsPalindrome(this string str)
+  {
+    if (string.IsNullOrEmpty(str))
+      return false;
+
+    string reversed = new string(str.Reverse().ToArray());
+    return str.Equals(reversed, StringComparison.OrdinalIgnoreCase);
+  }
+}
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -342,9 +355,14 @@ internal class Program
 
     Console.WriteLine(pattern);
 
-    // INTERFACES
-    Console.WriteLine("INTERFACES");
+    // EXTENSION METHODS
+    Console.WriteLine("EXTENSION METHODS");
 
+    var maam = "maam";
+
+    // var isPalindrome = StringExtensions.IsPalindrome(maam);
+    var isPalindrome = maam.IsPalindrome();
+    Console.WriteLine(isPalindrome);
 
   }
 }
