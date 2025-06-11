@@ -119,6 +119,20 @@ public class Example
     }
   }
 }
+public class Employee
+{
+  public string Name { get; set; }
+  public decimal Salary { get; set; }
+  public static List<Employee> GetEmployees()
+  {
+    return new List<Employee>
+    {
+      new Employee { Name = "Alice", Salary = 120000 },
+      new Employee { Name = "Bob", Salary = 95000 },
+      new Employee { Name = "Charlie", Salary = 105000 }
+    };
+  }
+}
 
 internal class Program
 {
@@ -212,5 +226,64 @@ internal class Program
     Action<string> write = Console.WriteLine;
     write("test");
     
+    // LINQ
+    Console.WriteLine("---LINQ---");
+    // Example: Employee Data Query
+    
+    List<Employee> employees = Employee.GetEmployees();
+    List<Employee> highEarners = new List<Employee>();
+
+    foreach (var employee in employees)
+    {
+      if (employee.Salary > 100000)
+      {
+        highEarners.Add(employee);
+      }
+    }
+
+    highEarners.Sort((emp1, emp2) => emp1.Name.CompareTo(emp2.Name));
+
+    foreach (var highEarner in highEarners)
+    {
+      Console.WriteLine(highEarner.Name);
+    }
+    // LINQ Query Syntax
+    var highEarnersWitLinq = employees
+      .Where(e => e.Salary > 100000)
+      .OrderBy(e => e.Name)
+      .Select(e => e.Name);
+
+    foreach (var name in highEarnersWitLinq)
+    {
+      Console.WriteLine(name);
+    }
+    
+    // Lazy Evaluation
+    Console.WriteLine("---Lazy Evaluation---");
+    var unit = new[] { 1, 2, 3, 4, 5 };
+        
+    var query = unit.Where(n => n % 2 == 0);
+
+    Console.WriteLine("Query is defined, but not executed yet.");
+
+    foreach (var number in query)
+    {
+      Console.WriteLine(number);  // Only now is the query executed
+    }
+    
+    // ToList() and ToArray()
+    Console.WriteLine("---ToList() and ToArray()---");
+    var integer = new[] { 1, 2, 3, 4, 5 };
+        
+    var queryInteger = integer.Where(n => n % 2 == 0);
+
+    Console.WriteLine("Query is defined, but not executed yet.");
+
+    var asList = queryInteger.ToList();
+    //now it's executed and those values are officially in memory!
   }
+  
 }
+
+
+
