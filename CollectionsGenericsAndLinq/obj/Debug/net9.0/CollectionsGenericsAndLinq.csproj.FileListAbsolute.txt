@@ -1,0 +1,15 @@
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\bin\Debug\net9.0\CollectionsGenericsAndLinq.exe
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\bin\Debug\net9.0\CollectionsGenericsAndLinq.deps.json
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\bin\Debug\net9.0\CollectionsGenericsAndLinq.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\bin\Debug\net9.0\CollectionsGenericsAndLinq.dll
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\bin\Debug\net9.0\CollectionsGenericsAndLinq.pdb
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.sourcelink.json
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.dll
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\refint\CollectionsGenericsAndLinq.dll
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.pdb
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\CollectionsGenericsAndLinq.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\CollectionsGenericsAndLinq\obj\Debug\net9.0\ref\CollectionsGenericsAndLinq.dll
