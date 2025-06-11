@@ -1,4 +1,7 @@
 ﻿// BASIC GENERIC TYPES
+
+using System.Collections.Immutable;
+
 public class Box<T>
 {
   private T _item;
@@ -48,6 +51,17 @@ public class Repository<T> : IRepository<T> where T : class
     return _entities;
   }
 
+  // yield keyword
+
+  /* 
+  The yield keyword is used to return an element one at a time from a method. It is commonly used in LINQ queries to return a sequence of elements. 
+  */
+  public IEnumerable<int> GetNumbers()
+  {
+    yield return 1;
+    yield return 2;
+  }
+
   public T GetById(int id)
   {
     // Try to find an entity with a property named "Id" of type Guid or int
@@ -92,6 +106,20 @@ public class Product
   public Guid Id { get; set; }
   public string Name { get; set; }
 }
+
+// IEnumerable<T> as Our First Generic Collection Type
+public class Example
+{
+  public void PrintItems(IEnumerable<string> items)
+  {
+    //Remember foreach?
+    foreach (var item in items)
+    {
+      Console.WriteLine(item);
+    }
+  }
+}
+
 internal class Program
 {
   private static void Main(string[] args)
@@ -130,5 +158,46 @@ internal class Program
     {
       Console.WriteLine($"Product: {product.Id} - {product.Name}");
     }
+
+    Console.WriteLine(pattern);
+
+    // ARRAYS VS COLLECTIONS
+    Console.WriteLine("ARRAYS");
+    // Declaring an array of integers with 5 elements
+    int[] numbers = new int[5];
+    numbers[0] = 1;
+    numbers[1] = 2;
+    numbers[2] = 3;
+    numbers[3] = 4;
+
+    var theDefaultValue = numbers[4]; //0
+    //var notPossible = numbers[5]; //throws an IndexOutOfRangeException
+
+    // Initializing an array with values
+    int[] myNumbers = { 1, 2, 3, 4, 5 };
+
+    // Introducing the .NET Developer's Favorite Collection Type: List<T>
+    Console.WriteLine("Lists");
+
+    var bus = new List<string>();
+
+    bus.Add("Beto");
+    bus.Add("Tiago");
+    bus.Add("Felipe");
+    bus.AddRange(["Hulk", "Diogon"]);
+
+    foreach (var busList in bus)
+    {
+      Console.WriteLine(busList);
+    }
+
+    List<int> digit = [1, 2, 3, 4, 5];
+
+    var dict = new Dictionary<string, int>();
+
+    dict["asdf"] = 3;
+
+    var otherBus = bus.ToImmutableArray();
+
   }
 }
