@@ -198,6 +198,19 @@ internal class Program
     dict["asdf"] = 3;
 
     var otherBus = bus.ToImmutableArray();
+    
+    // Lambda Expression
+    Console.WriteLine("---Lambda Expressions---");
+    Func<int, int, int> add = (a, b) => a + b;
 
+    int Add(int a, int b)
+    {
+      return a + b;
+    }
+    
+    Action doesSomething = () => Console.WriteLine("Does Something");
+    Action<string> write = Console.WriteLine;
+    write("test");
+    
   }
 }
