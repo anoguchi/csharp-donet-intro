@@ -247,6 +247,7 @@ internal class Program
     {
       Console.WriteLine(highEarner.Name);
     }
+    
     // LINQ Query Syntax
     var highEarnersWitLinq = employees
       .Where(e => e.Salary > 100000)
