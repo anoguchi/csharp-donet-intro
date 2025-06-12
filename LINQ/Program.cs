@@ -21,7 +21,7 @@ internal class Program
         employees.Add(new Employee { FirstName = "Sam", LastName = "Brown", Salary = 55000 });
         employees.Add(new Employee { FirstName = "Lisa", LastName = "White", Salary = 70000 });
         employees.Add(new Employee { FirstName = "Tom", LastName = "Doe", Salary = 45000 });
-        employees.Add(new Employee { FirstName = "Anna", LastName = "Doe", Salary = 80000 });
+        employees.Add(new Employee { FirstName = "Anna", LastName = "Smith", Salary = 80000 });
         employees.Add(new Employee { FirstName = "Alberto", LastName = "Noguchi", Salary = 80000 });
         
         // Select distinct above 50K last names
@@ -77,5 +77,17 @@ internal class Program
             .Select(e => $"{e.FirstName} {e.LastName}")
             .Aggregate((current, next) => $"{current}, {next}");
         Console.WriteLine($"Aggregated Names: {aggregatedNames}");
+        
+        // Group by
+        var grouped = employees.GroupBy(e => e.FirstName);
+
+        foreach (var group in grouped)
+        {
+            Console.WriteLine($"{group.Key} employees: {group.Count()}");
+            foreach (var employee in group)
+            {
+                Console.WriteLine($"  {employee.FirstName} {employee.LastName} - {employee.Salary}");
+            }
+        }
     }
 }
