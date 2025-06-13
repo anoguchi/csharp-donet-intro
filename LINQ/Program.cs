@@ -23,7 +23,7 @@ internal class Program
         employees.Add(new Employee { FirstName = "Tom", LastName = "Doe", Salary = 45000 });
         employees.Add(new Employee { FirstName = "Anna", LastName = "Smith", Salary = 80000 });
         employees.Add(new Employee { FirstName = "Alberto", LastName = "Noguchi", Salary = 80000 });
-        
+
         // Select distinct above 50K last names
         IEnumerable<string> distinctLastNamesAbove5K = employees
             .Where(e => e.Salary > 50000)

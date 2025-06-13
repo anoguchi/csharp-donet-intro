@@ -1,0 +1,15 @@
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\bin\Debug\net9.0\CommonLibrariesAndAdvancedTopics.exe
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\bin\Debug\net9.0\CommonLibrariesAndAdvancedTopics.deps.json
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\bin\Debug\net9.0\CommonLibrariesAndAdvancedTopics.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\bin\Debug\net9.0\CommonLibrariesAndAdvancedTopics.dll
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\bin\Debug\net9.0\CommonLibrariesAndAdvancedTopics.pdb
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.sourcelink.json
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.dll
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\refint\CommonLibrariesAndAdvancedTopics.dll
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.pdb
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\CommonLibrariesAndAdvancedTopics.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\CommonLibrariesAndAdvancedTopics\obj\Debug\net9.0\ref\CommonLibrariesAndAdvancedTopics.dll
