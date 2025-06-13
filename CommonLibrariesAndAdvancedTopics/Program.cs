@@ -13,21 +13,3 @@
         return response;
     }
 }
-
-public class MyResource : IDisposable
-{
-    private bool _disposed = false; // To detect redundant calls
-    private SqlConnection _connection;
-
-    // Implement IDisposable
-    public void Dispose()
-    {
-        if (!disposed)
-        {
-            _connection.Dispose();
-
-            // Free your own state (unmanaged objects).
-            disposed = true;
-        }
-    }
-}

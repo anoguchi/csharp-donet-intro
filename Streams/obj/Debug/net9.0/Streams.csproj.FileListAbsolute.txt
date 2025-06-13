@@ -1,0 +1,15 @@
+C:\Beto\Dev\CSharp\Intro\Streams\bin\Debug\net9.0\Streams.exe
+C:\Beto\Dev\CSharp\Intro\Streams\bin\Debug\net9.0\Streams.deps.json
+C:\Beto\Dev\CSharp\Intro\Streams\bin\Debug\net9.0\Streams.runtimeconfig.json
+C:\Beto\Dev\CSharp\Intro\Streams\bin\Debug\net9.0\Streams.dll
+C:\Beto\Dev\CSharp\Intro\Streams\bin\Debug\net9.0\Streams.pdb
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.GeneratedMSBuildEditorConfig.editorconfig
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.AssemblyInfoInputs.cache
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.AssemblyInfo.cs
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.csproj.CoreCompileInputs.cache
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.sourcelink.json
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.dll
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\refint\Streams.dll
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.pdb
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\Streams.genruntimeconfig.cache
+C:\Beto\Dev\CSharp\Intro\Streams\obj\Debug\net9.0\ref\Streams.dll
