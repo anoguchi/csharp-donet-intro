@@ -99,7 +99,7 @@ employeeRoute.MapPut("{id:int}", ([FromBody] UpdateEmployeeRequest employee, [Fr
     existingEmployee.Email = employee.Email;
 
     return Results.Ok(existingEmployee);
-}});
+});
 
 app.Run();
 
