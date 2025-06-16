@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using EmployeeAPI;
 using EmployeeAPI.Abstractions;
 using EmployeeAPI.Employees;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IRepository<Employee>,  EmployeeRepository>();
 builder.Services.AddProblemDetails();
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
 
 var app = builder.Build();
 
@@ -63,25 +66,27 @@ employeeRoute.MapGet("{id:int}", ([FromRoute]int id, IRepository<Employee> repos
     });
 });
 
-employeeRoute.MapPost(string.Empty, ([FromBody] CreateEmployeeRequest employeeRequest, IRepository<Employee> repository) => {
-    var validationProblems = new List<ValidationResult>();
-    var isValid = Validator.TryValidateObject(employeeRequest, new ValidationContext(employeeRequest), validationProblems, true);
-    if (!isValid)
-    {
-        return Results.BadRequest(validationProblems.ToValidationProblemDetails());
-    }
-    var newEmployee = new Employee {
-        FirstName = employeeRequest.FirstName!,
-        LastName = employeeRequest.LastName!,
-        SocialSecurityNumber = employeeRequest.SocialSecurityNumber,
-        Address1 = employeeRequest.Address1,
-        Address2 = employeeRequest.Address2,
-        City = employeeRequest.City,
-        State = employeeRequest.State,
-        ZipCode = employeeRequest.ZipCode,
-        PhoneNumber = employeeRequest.PhoneNumber,
-        Email = employeeRequest.Email
-    };
+employeeRoute.MapPost(string.Empty, 
+    async ([FromBody] CreateEmployeeRequest employeeRequest, 
+        IRepository<Employee> repository,
+        IValidator<CreateEmployeeRequest> validator) => {
+        var validationResults = await validator.ValidateAsync(employeeRequest);
+        if (!validationResults.IsValid)
+        {
+            return Results.ValidationProblem(validationResults.ToDictionary());
+        } 
+        var newEmployee = new Employee {
+            FirstName = employeeRequest.FirstName!,
+            LastName = employeeRequest.LastName!,
+            SocialSecurityNumber = employeeRequest.SocialSecurityNumber,
+            Address1 = employeeRequest.Address1,
+            Address2 = employeeRequest.Address2,
+            City = employeeRequest.City,
+            State = employeeRequest.State,
+            ZipCode = employeeRequest.ZipCode,
+            PhoneNumber = employeeRequest.PhoneNumber,
+            Email = employeeRequest.Email
+        };
     repository.Create(newEmployee);
     return Results.Created($"/employees/{newEmployee.Id}", employeeRequest);
 });
