@@ -67,18 +67,27 @@ public class BasicTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task UpdateEmployee_ReturnsOkResult()
     {
         var client = _factory.CreateClient();
-        var response = await client.PutAsJsonAsync("/employees/1", new Employee { FirstName = "John", LastName = "Doe", SocialSecurityNumber = "123-45-6789" });
+        var response = await client.PutAsJsonAsync("/employees/1", new Employee { FirstName = "John", LastName = "Doe", Address1 = "123 Main St" });
 
         response.EnsureSuccessStatusCode();
     }
-    
+
     [Fact]
-    public async Task UpdateEmployee_ReturnsNotFoundOrNonExistentEmployee()
+    public async Task UpdateEmployee_ReturnsBadRequestWhenAddress()
     {
+        // Arrange
         var client = _factory.CreateClient();
-        var response = await client.PutAsJsonAsync("/employees/9999", new Employee { FirstName = "John", LastName = "Doe", SocialSecurityNumber = "123-45-6789" });
+        var invalidEmployee = new UpdateEmployeeRequest(); // Empty object to trigger validation~~~~~~```` errors
 
-        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        // Act
+        var response = await client.PutAsJsonAsync($"/employees/1", invalidEmployee);
 
+        // Assert
+        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+
+        var problemDetails = await response.Content.ReadFromJsonAsync<ValidationProblemDetails>();
+        Assert.NotNull(problemDetails);
+        Assert.Contains("Address1", problemDetails.Errors.Keys);
     }
+    
 }

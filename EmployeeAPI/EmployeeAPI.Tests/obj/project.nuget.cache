@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jAVjYzNd68M=",
+  "dgSpecHash": "Uh3Yd5N806g=",
   "success": true,
   "projectFilePath": "C:\\Beto\\Dev\\CSharp\\Intro\\EmployeeAPI\\EmployeeAPI.Tests\\EmployeeAPI.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahnog\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\ahnog\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\ahnog\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "C:\\Users\\ahnog\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\ahnog\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\8.0.17\\microsoft.aspnetcore.mvc.testing.8.0.17.nupkg.sha512",
     "C:\\Users\\ahnog\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.17\\microsoft.aspnetcore.openapi.8.0.17.nupkg.sha512",
