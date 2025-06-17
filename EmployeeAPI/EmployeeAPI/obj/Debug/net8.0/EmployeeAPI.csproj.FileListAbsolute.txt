@@ -35,3 +35,5 @@ C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\ref\EmployeeAP
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\bin\Debug\net8.0\FluentValidation.dll
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\bin\Debug\net8.0\EmployeeAPI.xml
+C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI\obj\Debug\net8.0\EmployeeAPI.xml

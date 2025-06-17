@@ -440,3 +440,4 @@ C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI.Tests\obj\Debug\net8.0\MvcTesti
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI.Tests\bin\Debug\net8.0\FluentValidation.dll
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI.Tests\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI.Tests\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Beto\Dev\CSharp\Intro\EmployeeAPI\EmployeeAPI.Tests\bin\Debug\net8.0\EmployeeAPI.xml

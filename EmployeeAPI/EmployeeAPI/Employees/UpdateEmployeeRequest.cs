@@ -13,7 +13,6 @@ public class UpdateEmployeeRequest
     public string? PhoneNumber { get; set; }
     public string? Email { get; set; }
 }
-
 public class UpdateEmployeeRequestValidator : AbstractValidator<UpdateEmployeeRequest>
 {
     private readonly HttpContext _httpContext;
@@ -24,7 +23,7 @@ public class UpdateEmployeeRequestValidator : AbstractValidator<UpdateEmployeeRe
         this._httpContext = httpContextAccessor.HttpContext!;
         this._repository = repository;
 
-        RuleFor(x => x.Address1).MustAsync(NotBeEmptyIfItIsSetOnEmployeeAlreadyAsync).WithMessage("Address1 must not be empty as an address was already set on the employee.");
+        RuleFor(x => x.Address1).MustAsync(NotBeEmptyIfItIsSetOnEmployeeAlreadyAsync).WithMessage("Address1 must not be empty.");
     }
 
     private async Task<bool> NotBeEmptyIfItIsSetOnEmployeeAlreadyAsync(string? address, CancellationToken token)
