@@ -25,6 +25,8 @@ public class EmployeeBenefits
     public int EmployeeId { get; set; }
     public BenefitType BenefitType { get; set; }
     public decimal Cost { get; set; }
+    
+    public Employee Employee { get; set; } = null!; // Navigation property for EF Core
 }
 
 public enum BenefitType

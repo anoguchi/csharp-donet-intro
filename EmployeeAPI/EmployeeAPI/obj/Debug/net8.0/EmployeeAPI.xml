@@ -39,5 +39,17 @@
             <param name="employeeRequest">The employee data to update.</param>
             <returns></returns>
         </member>
+        <member name="T:EmployeeAPI.Migrations.Init">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeAPI.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeAPI.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:EmployeeAPI.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
