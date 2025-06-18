@@ -10,7 +10,8 @@ app.MapGet("/", () => "Hello World!");
 app.MapGet("/teste", () =>
 {
     Thread.Sleep(1500);
-    return "Teste 2"; // Simula uma operação demorada
+    return "Teste 2"; // Simula uma operação demorada InstanciarMeteoro
 });
+
 
 app.Run();

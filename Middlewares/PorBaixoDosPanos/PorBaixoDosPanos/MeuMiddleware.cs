@@ -24,4 +24,6 @@ namespace PorBaixoDosPanos
             Log.Information($"A execução demorou {sw.Elapsed.TotalMicroseconds}ms ({sw.Elapsed.TotalMicroseconds} segundos)");
         }
     }
+
+
 }
